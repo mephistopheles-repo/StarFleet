@@ -32,6 +32,8 @@
           "configurations": {
             "production": {
               "outputPath": "docs",
+              "baseHref": "/StarFleet/",
+              "deployUrl": "/StarFleet/",
               "budgets": [
                 {
                   "type": "initial",
