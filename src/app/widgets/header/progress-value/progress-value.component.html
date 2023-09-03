@@ -1,0 +1,18 @@
+<div class="input-group flex-nowrap"
+     (mouseenter)="toolip.classList.remove('hidden')"
+     (mouseleave)="toolip.classList.add('hidden')">
+  <div class="input-group-text" id="btnGroupAddon"><i class="science-icon"></i></div>
+  <div class="progress form-control p-0 me-1" style="height: 38px;width: 160px;background-color: #0000">
+    <div class="progress-bar bg-info  text-dark" style="width: 50%">50%</div>
+  </div>
+</div>
+<div class="position-absolute hidden mt-1" #toolip style="width: 350px;z-index: 9999;">
+  <div class="card" style="position: relative">
+    <div class="card-img-top science-icon"></div>
+    <div class="card-body">
+      <h5 class="card-title">Варп даст</h5>
+      <p class="card-text">Проводятся испытания влияния Варп даста на сценаристов.</p>
+      <p class="card-text">Примерное время: 6ч 45м</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="input-group"
+     (mouseenter)="toolip.classList.remove('hidden')"
+     (mouseleave)="toolip.classList.add('hidden')">
+  <div class="input-group-text" id="btnGroupAddon">@</div>
+  <input type="text" value="123 456 789" readonly class="form-control form-control-dark text-bg-dark me-1">
+</div>
+<div class="position-absolute  mt-1 hidden" #toolip style="width: 350px;z-index: 9999;">
+  <div class="card" style="position: relative">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ресурсий</h5>
+      <p class="card-text">Трудно добыть, легко потерять и невозможно забыть</p>
+      <p class="card-text">Приход: 666/мин</p>
+    </div>
+  </div>
+</div>
+

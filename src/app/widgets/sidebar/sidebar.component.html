@@ -1,0 +1,106 @@
+<div class="flex-shrink-0 p-3">
+  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+    <svg class="bi pe-none me-2" width="30" height="24">
+      <use xlink:href="#bootstrap"></use>
+    </svg>
+    <span class="fs-5 fw-semibold">Департаменты</span>
+  </a>
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <button
+        #administrativeButton
+        (click)="administrativeButton.classList.toggle('collapsed')"
+        [attr.aria-expanded]="!administrativeButton.classList.contains('collapsed')"
+        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
+        Администрация
+      </button>
+      <div class="collapse show" [class.show]="!administrativeButton.classList.contains('collapsed')">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a [routerLink]="['/administrative']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Обзор империи</a></li>
+          <li><a [routerLink]="['/administrative/star-map']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Карта</a></li>
+          <li><a [routerLink]="['/administrative/diplomacy']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Дипломатия</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button
+        #propertyButton
+        (click)="propertyButton.classList.toggle('collapsed')"
+        [attr.aria-expanded]="!propertyButton.classList.contains('collapsed')"
+        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
+        Имущественный
+      </button>
+      <div class="collapse" [class.show]="!propertyButton.classList.contains('collapsed')">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a [routerLink]="['/property/storages']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Склады</a></li>
+          <li><a [routerLink]="['/property/docks']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Доки</a></li>
+          <li><a [routerLink]="['/property/trade-hubs']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Торговые</a></li>
+          <li><a [routerLink]="['/property/military']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Военные</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button
+        #missionButton
+        (click)="missionButton.classList.toggle('collapsed')"
+        [attr.aria-expanded]="!missionButton.classList.contains('collapsed')"
+        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
+        Миссии
+      </button>
+      <div class="collapse" [class.show]="!missionButton.classList.contains('collapsed')">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a [routerLink]="['/missions/create']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Отправить</a></li>
+          <li><a [routerLink]="['/missions/active']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Активные</a></li>
+          <li><a [routerLink]="['/missions/complete']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Завершенные</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <a [routerLink]="['/market']"
+         class="btn btn-toggle d-inline-flex align-items-center rounded border-0">
+        Торговый
+      </a>
+    </li>
+    <li class="mb-1">
+      <button
+        #engineeringButton
+        (click)="engineeringButton.classList.toggle('collapsed')"
+        [attr.aria-expanded]="!engineeringButton.classList.contains('collapsed')"
+        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
+        Инженерный
+      </button>
+      <div class="collapse" [class.show]="!engineeringButton.classList.contains('collapsed')">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a [routerLink]="['/engineering/research']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Исследования</a></li>
+          <li><a [routerLink]="['/engineering/development']"
+                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Разработка</a></li>
+        </ul>
+      </div>
+    </li>
+    <!--    <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            Account
+          </button>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
+            </ul>
+          </div>
+        </li>-->
+  </ul>
+</div>

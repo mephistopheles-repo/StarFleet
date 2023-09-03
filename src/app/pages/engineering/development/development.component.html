@@ -1,0 +1,84 @@
+<div class="row">
+  <app-blueprint-sidebar class="col-2"></app-blueprint-sidebar>
+  <div class="col-6">
+    <div class="d-flex mb-2 justify-content-between">
+      <div class="card" style="    height: 110px;">
+        <div class="card-header">
+          Док
+        </div>
+        <div class="card-body d-flex">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input
+              type="radio" class="btn-check" name="btnradio3" id="btnradio11" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio11">Малый</label>
+
+            <input
+              type="radio" class="btn-check" name="btnradio3" id="btnradio12" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio12">Средний</label>
+
+            <input
+              type="radio" class="btn-check" name="btnradio3" id="btnradio13" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio13">Большой</label>
+
+            <input
+              type="radio" class="btn-check" name="btnradio3" id="btnradio14" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio14">Капитальный</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="    height: 110px;">
+        <div class="card-header">
+          Материал остова
+        </div>
+        <div class="card-body d-flex">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Дерево 2т/клетка</option>
+            <option value="1">Силикон 2т/клетка</option>
+            <option value="2">Бетон 2т/клетка</option>
+            <option value="3">Пластилин 2т/клетка</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <div class="cell-row d-flex">
+        <div *ngFor="let _ of [].constructor(10)"></div>
+      </div>
+      <div class="cell-row  d-flex" *ngFor="let _ of [].constructor(10)">
+        <div></div>
+        <div *ngFor="let _ of [].constructor(8)" (click)="$any($event.target).classList.toggle('mark')"></div>
+        <div></div>
+      </div>
+      <div class="cell-row  d-flex">
+        <div *ngFor="let _ of [].constructor(10)"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="card mb-2">
+      <div class="card-header">
+        Затраты
+      </div>
+      <div class="card-body d-flex flex-column">
+        <span>Ресурсий: 999</span>
+        <span>Ресурсий: 999</span>
+        <span>Ресурсий: 999</span>
+        <span>Ресурсий: 999</span>
+        <span>Время постройки: 999</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Параметры
+      </div>
+      <div class="card-body d-flex flex-column">
+        <span>Люди: 999</span>
+        <span>Грузы: 999</span>
+        <span>Суб свет: 999</span>
+        <span>Сверх свет: 999</span>
+      </div>
+    </div>
+  </div>
+  <app-build-sidebar class="col-2"></app-build-sidebar>
+</div>

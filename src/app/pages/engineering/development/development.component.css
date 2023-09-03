@@ -1,0 +1,30 @@
+.cell-row div {
+  width: 32px;
+  height: 32px;
+}
+
+.mark:before {
+  content: '@';
+}
+
+.cell-row div {
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+
+  border-right-color: black;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.cell-row div:last-child {
+  border-right-color: black;
+  border-right-style: none;
+  border-right-width: 1px;
+}
+
+.cell-row:last-child div {
+  border-bottom-color: black;
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+}

@@ -1,0 +1,48 @@
+<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style="height: 80vh;">
+  <div
+    class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis flex-column text-decoration-none border-bottom">
+    <span>Схемы</span>
+    <div class="flex-nowrap mb-2">
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input (click)="select('Корпус')"
+               type="radio" class="btn-check" name="btnradio1" id="btnradio21" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio21">М</label>
+
+        <input (click)="select('Грузовые')"
+               type="radio" class="btn-check" name="btnradio1" id="btnradio22" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio22">С</label>
+
+        <input (click)="select('Двигатели')"
+               type="radio" class="btn-check" name="btnradio1" id="btnradio23" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio23">Б</label>
+
+        <input (click)="select('Реакторы')"
+               type="radio" class="btn-check" name="btnradio1" id="btnradio24" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio24">К</label>
+      </div>
+      <button class="btn btn-success ms-1">+</button>
+    </div>
+    <input class="form-control form-control-sm" type="text" placeholder="Поиск" aria-label=".form-control-sm example">
+  </div>
+  <div class="list-group list-group-flush border-bottom scrollarea">
+    <button *ngFor="let _ of [].constructor(7)"
+            class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+      <div class="d-flex align-items-center justify-content-around">
+        <div id="btnGroupAddon" class="btn btn-outline-success">@</div>
+        <strong class="mb-1">Кораблик</strong>
+        <small>Р:9999</small>
+      </div>
+      <div class="row ms-1">
+        <div class="col-6 p-0">
+          <div class="col-10 mb-1 small">П1: 111л/км</div>
+          <div class="col-10 mb-1 small">П2: 111л/км</div>
+        </div>
+        <div class="col-6 p-0">
+          <div class="col-10 mb-1 small">П3: 111л/км</div>
+          <div class="col-10 mb-1 small">П4: 111л/км</div>
+        </div>
+      </div>
+    </button>
+  </div>
+
+</div>

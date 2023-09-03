@@ -1,0 +1,139 @@
+<div class="row">
+  <div class="col-4">
+    <div class="d-flex mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">НИИ 1</h5>
+          <p class="card-text">Занимается освоением бюджетов</p>
+          <div class="row">
+            <span class="card-text mb-1">Наука +4</span>
+          </div>
+          <span class="card-text">Мотивация</span>
+          <div class="progress form-control p-0 me-1" style="background-color: #0000">
+            <div class="progress-bar bg-info  text-dark" style="width: 50%">50%</div>
+          </div>
+          <button class="btn btn-success">Мотивировать</button>
+        </div>
+      </div>
+      <div class="card ms-2">
+        <div class="card-body">
+          <h5 class="card-title">НИИ 2</h5>
+          <p class="card-text">Занимается освоением бюджетов</p>
+          <div class="row">
+            <span class="card-text mb-1">Наука +4</span>
+          </div>
+          <span class="card-text">Мотивация</span>
+          <div class="progress form-control p-0 me-1" style="background-color: #0000">
+            <div class="progress-bar bg-danger  text-dark" style="width: 10%">10%</div>
+          </div>
+          <button class="btn btn-success">Мотивировать</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <div class="card ">
+          <div class="card-img-top science-icon"></div>
+          <div class="card-body">
+            <h5 class="card-title">Варп даст</h5>
+            <p class="card-text">Проводятся испытания влияния Варп даста на сценаристов.</p>
+            <p class="card-text">Примерное время: 6ч 45м</p>
+            <div class="progress form-control p-0 me-1" style="background-color: #0000">
+              <div class="progress-bar bg-info  text-dark" style="width: 50%">50%</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-danger mb-2">Отменить</button>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Закрепить</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">
+        Исследование 1
+        <div class="progress-bar bg-info text-dark" style="width: 10%;">10%</div>
+        <button type="button" class="btn-close" aria-label="Close" style="position: absolute;right: 0;top: 0;"></button>
+      </li>
+      <li class="list-group-item">
+        Исследование 2
+        <div class="bg-info text-dark" style="width: 3px;">0%</div>
+        <button type="button" class="btn-close" aria-label="Close" style="position: absolute;right: 0;top: 0;"></button>
+      </li>
+      <li class="list-group-item">
+        Исследование 3
+        <div class="progress-bar bg-info text-dark" style="width: 90%;">90%</div>
+        <button type="button" class="btn-close" aria-label="Close" style="position: absolute;right: 0;top: 0;"></button>
+      </li>
+    </ol>
+  </div>
+  <div class="col-4">
+    <div class="accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <div class="accordion-button collapsed d-flex justify-content-between  p-2"
+               #rfirstButt (click)="rfirstButt.classList.toggle('collapsed')"
+               type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+               aria-controls="collapseTwo">
+            <span>Исследование 1</span>
+            <button (click)="$event.stopPropagation()" class="btn btn-primary  m-auto" type="button">
+              В очередь
+            </button>
+          </div>
+        </h2>
+        <div [class.show]="!rfirstButt.classList.contains('collapsed')"
+             id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper ultrices finibus. Donec ornare augue sed
+            nunc faucibus vehicula. Aenean lectus odio, malesuada eget ultricies eget, accumsan at mauris.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <div class="accordion-button collapsed d-flex justify-content-between  p-2"
+               #rsecondButt (click)="rsecondButt.classList.toggle('collapsed')"
+               type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+               aria-controls="collapseTwo">
+            <span>Исследование 2</span>
+            <button (click)="$event.stopPropagation()" class="btn btn-primary  m-auto" type="button">
+              В очередь
+            </button>
+          </div>
+        </h2>
+        <div [class.show]="!rsecondButt.classList.contains('collapsed')"
+             id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper ultrices finibus. Donec ornare augue sed
+            nunc faucibus vehicula. Aenean lectus odio, malesuada eget ultricies eget, accumsan at mauris.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <div class="accordion-button collapsed d-flex justify-content-between p-2"
+               #rthirdButt (click)="rthirdButt.classList.toggle('collapsed')"
+               type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+               aria-controls="collapseTwo">
+            <span>Исследование 3</span>
+            <button (click)="$event.stopPropagation()" class="btn btn-primary m-auto" type="button">
+              В очередь
+            </button>
+          </div>
+        </h2>
+        <div [class.show]="!rthirdButt.classList.contains('collapsed')"
+             id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper ultrices finibus. Donec ornare augue sed
+            nunc faucibus vehicula. Aenean lectus odio, malesuada eget ultricies eget, accumsan at mauris.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
