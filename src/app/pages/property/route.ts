@@ -9,4 +9,5 @@ export default [
   {path: 'military', component: MilitaryComponent},
   {path: 'storages', component: StoragesComponent},
   {path: 'trade-hubs', component: TradeHubsComponent},
+  {path: 'fleets', loadChildren: () => import('./fleets/route')},
 ] as Route[];

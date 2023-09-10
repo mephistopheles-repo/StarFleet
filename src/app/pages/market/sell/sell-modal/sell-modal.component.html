@@ -1,0 +1,56 @@
+<div class="modal-header border-bottom-0">
+  <h1 class="modal-title fs-5">Оформление заказа</h1>
+  <button type="button" class="btn-close" (click)="close()" aria-label="Close"></button>
+</div>
+<div class="modal-body py-0">
+  <form class="" novalidate>
+    <div class="row">
+      <div class="mb-3 col-3">
+        <label for="exampleFormControlInput1" class="form-label">Кол-во</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" value="99999">
+      </div>
+      <div class="mb-3 col-3">
+        <label for="exampleFormControlInput2" class="form-label">Цена</label>
+        <input type="number" class="form-control" id="exampleFormControlInput2" value="99999">
+      </div>
+      <div class="mb-3 col-3">
+        <label for="exampleFormControlInput3" class="form-label">Объем</label>
+        <input type="number" class="form-control" id="exampleFormControlInput3" value="99999">
+      </div>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" (change)="deliveryGroup.classList.toggle('hidden')" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Доставка</label>
+    </div>
+    <div class="input-group hidden" #deliveryGroup>
+      <input list="systemsDataList" class="form-control">
+      <datalist id="systemsDataList">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+      <input list="planetDataList" class="form-control">
+      <datalist id="planetDataList">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+      <input list="stationDataList" class="form-control">
+      <datalist id="stationDataList">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+    </div>
+  </form>
+</div>
+<div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+  <button class="btn btn-primary" (click)="submit()">Подтвердить</button>
+  <button class="btn btn-info" (click)="close()">Отмена</button>
+</div>

@@ -1,0 +1,8 @@
+<div class="d-flex flex-column">
+  <div class="btn-group ms-3 me-3 mb-3">
+    <a [routerLink]="['./']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" class="btn btn-primary">Обзор</a>
+    <a [routerLink]="['./edit']" [routerLinkActive]="'active'" class="btn btn-primary">Новый</a>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+

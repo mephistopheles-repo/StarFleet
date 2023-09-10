@@ -1,0 +1,113 @@
+<div class="card mb-3">
+
+  <div class="card-body">
+
+    <div class="d-flex fw-bold small mb-3">
+      <span class="flex-grow-1">Изменение баланса</span>
+      <a href="#" data-toggle="card-expand" class="text-inverse text-opacity-50 text-decoration-none"><i
+        class="bi bi-fullscreen"></i></a>
+    </div>
+
+
+    <div class="table-responsive">
+      <table class="w-100 mb-0 small align-middle text-nowrap">
+        <tbody>
+        <tr>
+          <td>
+            <div class="d-flex">
+              <div class="position-relative mb-2">
+                <div class="bg-position-center bg-size-cover bg-repeat-no-repeat w-80px h-60px"
+                     style="background-image: url(assets/img/dashboard/product-1.jpeg);">
+                </div>
+                <div class="position-absolute top-0 start-0">
+                      <span
+                        class="badge bg-theme text-theme-900 rounded-0 d-flex align-items-center justify-content-center w-20px h-20px">1</span>
+                </div>
+              </div>
+              <div class="flex-1 ps-3">
+                <div class="mb-1"><small
+                  class="fs-9px fw-500 lh-1 d-inline-block rounded-0 badge bg-warning bg-opacity-25 text-inverse text-opacity-75 pt-5px">Потрачено</small>
+                </div>
+                <div class="fw-500 text-inverse">Разведчик 1</div>
+                13000 денег
+              </div>
+            </div>
+          </td>
+          <td>
+            <table class="mb-2">
+              <tbody>
+              <tr>
+                <td class="pe-3">Статус:</td>
+                <td class="text-inverse text-opacity-75 fw-500">Уничтожен</td>
+              </tr>
+              <tr>
+                <td class="pe-3">Затрачено:</td>
+                <td class="text-inverse text-opacity-75 fw-500">$51,471</td>
+              </tr>
+              <tr>
+                <td class="pe-3 text-nowrap">Получено:</td>
+                <td class="text-inverse text-opacity-75 fw-500">-$15,441</td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+          <td><a href="#" class="text-decoration-none text-inverse"><i class="bi bi-search"></i></a></td>
+        </tr>
+        <tr *ngFor="let _ of [].constructor(9)">
+          <td>
+            <div class="d-flex mb-2 align-items-center">
+              <div class="position-relative">
+                <div class="bg-position-center bg-size-cover bg-repeat-no-repeat w-80px h-60px"
+                     style="background-image: url(assets/img/dashboard/product-2.jpeg);">
+                </div>
+                <div class="position-absolute top-0 start-0">
+                      <span
+                        class="badge bg-theme text-theme-900 rounded-0 d-flex align-items-center justify-content-center w-20px h-20px">2</span>
+                </div>
+              </div>
+              <div class="flex-1 ps-3">
+                <div class="mb-1"><small
+                  class="fs-9px fw-500 lh-1 d-inline-block rounded-0 badge bg-success bg-opacity-25 text-inverse text-opacity-75 pt-5px">Прибыль</small>
+                </div>
+                <div class="text-inverse fw-500">Ресурсы проданы</div>
+                Ресурсий: 1100101кг
+              </div>
+            </div>
+          </td>
+          <td>
+            <table class="mb-2">
+              <tbody>
+              <tr>
+                <td class="pe-3">Кол-во:</td>
+                <td class="text-inverse text-opacity-75 fw-500">1100101кг</td>
+              </tr>
+              <tr>
+                <td class="pe-3">Затрачено:</td>
+                <td class="text-inverse text-opacity-75 fw-500">$10,692</td>
+              </tr>
+              <tr>
+                <td class="pe-3 text-nowrap">Прибыль:</td>
+                <td class="text-inverse text-opacity-75 fw-500">$5,346</td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+          <td><a href="#" class="text-decoration-none text-inverse"><i class="bi bi-search"></i></a></td>
+        </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+  <div class="card-arrow">
+    <div class="card-arrow-top-left"></div>
+    <div class="card-arrow-top-right"></div>
+    <div class="card-arrow-bottom-left"></div>
+    <div class="card-arrow-bottom-right"></div>
+  </div>
+
+</div>

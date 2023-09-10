@@ -1,11 +1,27 @@
-<div class="coming-soon coming-soon d-flex justify-content-center">
-  <div class="flex-1">
-    <div class="coming-soon-content d-flex flex-column">
-      <div class="flex-1 mb-3">
-        <h2 class="mb-3">We're coming soon!</h2>
-        <p class="mb-4">We are working very hard on the new version of our site.<br> It will bring a lot of new
-          features. Stay tuned!</p>
-      </div>
-    </div>
+<div class="row mb-2  col-3">
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Все</option>
+    <option value="1">Торговые</option>
+    <option value="2">Военные</option>
+    <option value="3">Логистические</option>
+  </select>
+</div>
+
+<div class="row mb-2">
+  <div class="col-4">
+    <h3>Откуда</h3>
+  </div>
+  <div class="col-4">
+    <h3>Текущее</h3>
+  </div>
+  <div class="col-4">
+    <h3>Куда</h3>
   </div>
 </div>
+<div class="card" *ngFor="let _ of [].constructor(5)">
+  <div class="card-body">
+    <app-mission-view></app-mission-view>
+
+  </div>
+</div>
+

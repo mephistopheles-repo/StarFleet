@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-3">
+    <div class="input-group mb-3">
+      <input list="datalistOptions" class="form-control" placeholder="Регион" aria-label="Поиск" aria-describedby="button-addon2">
+      <datalist id="datalistOptions">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Добавить</button>
+    </div>
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-outline-success me-1">
+      Регион 1 <span class="badge "><button type="button" class="btn-close" aria-label="Close"></button></span>
+    </button>
+    <button type="button" class="btn btn-outline-success">
+      Регион 2<span class="badge "><button type="button" class="btn-close" aria-label="Close"></button></span>
+    </button>
+  </div>
+  <div class="col-3 mb-3 hidden">
+    <label for="price-from" class="form-label">Стоимость</label>
+    <div class="input-group">
+      <input type="number" id="price-from" class="form-control" placeholder="От">
+      <span class="input-group-text">-</span>
+      <input type="number" class="form-control" placeholder="До">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-2">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Все</option>
+      <option value="1">Строения</option>
+      <option value="2">Чертежи</option>
+      <option value="3">Ресурсы</option>
+      <option value="3">Ресурсы</option>
+    </select>
+    <select class="form-select" size="8" aria-label="">
+      <option value="1">Ресурсий #1</option>
+      <option value="1">Ресурсий #2</option>
+      <option value="2">Ресурсий #3</option>
+      <option value="3">Ресурсий #4</option>
+    </select>
+  </div>
+  <div class="col-10">
+    <table class="table table-hover table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Регион</th>
+        <th scope="col">Кол-во</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Место</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr (click)="showSellModal()" style="cursor: pointer" *ngFor="let _ of [].constructor(10)">
+        <th>Регион 1</th>
+        <td>99999шт</td>
+        <td>100500 денег</td>
+        <td>Система-Планета-Станция</td>
+      </tr>
+      </tbody>
+    </table>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
